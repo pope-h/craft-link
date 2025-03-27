@@ -18,7 +18,7 @@ if (!projectId) {
 const metadata = {
   name: "craftLink",
   description: "The Future of Decentralized Commerce",
-  url: "https://craftlink-frontend.vercel.app/", // origin must match your domain & subdomain
+  url: "https://craft-link.vercel.app/", // origin must match your domain & subdomain
   icons: ["https://assets.reown.com/reown-profile-pic.png"],
 };
 
