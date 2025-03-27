@@ -40,7 +40,7 @@ const Header = () => {
 
       const registryContract = getRegistryContract(provider);
       const tokenContract = getTokenContract(provider);
-      
+
       const isClient = await registryContract.isClient(address);
       console.log("Client checked", isClient);
       const isArtisan = await registryContract.isArtisan(address);

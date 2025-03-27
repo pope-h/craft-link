@@ -3,7 +3,7 @@
 import { wagmiAdapter, projectId } from "@/config";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { createAppKit } from "@reown/appkit/react";
-import { mainnet, sepolia } from "@reown/appkit/networks";
+import { mainnet, eduChainTestnet } from "wagmi/chains";
 import React, { type ReactNode } from "react";
 import { cookieToInitialState, WagmiProvider, type Config } from "wagmi";
 
@@ -26,7 +26,7 @@ const metadata = {
 export const modal = createAppKit({
   adapters: [wagmiAdapter],
   projectId,
-  networks: [sepolia], // [mainnet, arbitrum, avalanche, base, optimism, polygon]
+  networks: [eduChainTestnet], // [mainnet, arbitrum, avalanche, base, optimism, polygon]
   defaultNetwork: mainnet,
   metadata: metadata,
   features: {

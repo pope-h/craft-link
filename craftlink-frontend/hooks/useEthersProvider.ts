@@ -22,6 +22,7 @@ export function clientToProvider(client: Client<Transport, Chain>) {
 
 /** Action to convert a viem Client to an ethers.js Provider. */
 export function useEthersProvider({ chainId }: { chainId?: number } = {}) {
+  console.log('useEthersProvider', { chainId })
   const client = useClient<Config>({ chainId })
   return useMemo(() => (client ? clientToProvider(client) : undefined), [client])
 }
