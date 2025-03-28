@@ -43,7 +43,7 @@ export default function ProfilePreview() {
   
   const { fetchFromIPFS } = IPFS();
   const { address } = useAccount();
-  const provider = useEthersProvider();
+  const provider = useEthersProvider({ chainId: 656476 });
   const [detail, setDetail] = useState<{
     username: string;
     location: string;

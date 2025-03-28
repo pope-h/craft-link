@@ -37,7 +37,7 @@ export default function ProfilePreview() {
   const { clientBio, clientAvatar } = useGetClientData();
   const { address } = useAccount();
   const { fetchFromIPFS } = IPFS();
-  const provider = useEthersProvider();
+  const provider = useEthersProvider({ chainId: 656476 });
   const [clientDetail, setClientDetail] = useState<Client | null>(null);
   const { isLoading, startLoading, stopLoading } = useLoading();
   const router = useRouter();

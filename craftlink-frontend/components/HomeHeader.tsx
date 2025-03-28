@@ -18,7 +18,7 @@ interface Header {
 const HomeHeader = ({ isActive }: Header) => {
   const [userCard, setUserCard] = useState<AccountCard | null>(null);
   const { address } = useAccount();
-  const provider = useEthersProvider();
+  const provider = useEthersProvider({ chainId: 656476 });
 
   // Menu items array
   const menuItems = [

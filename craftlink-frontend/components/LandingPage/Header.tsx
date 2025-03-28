@@ -15,7 +15,7 @@ import ConnectWallet from "../ConnectWallet";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-  const provider = useEthersProvider();
+  const provider = useEthersProvider({ chainId: 656476 });
   const { address, isConnected } = useAccount();
   const router = useRouter();
 
